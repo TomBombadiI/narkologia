@@ -26904,6 +26904,26 @@ progress {
   text-align: center;
   color: var(--color-white);
 }
+
+.bottom-panel {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+}
+.bottom-panel__top {
+  padding: 0 12px 12px 12px;
+}
+.bottom-panel__bottom {
+  padding: 0.75rem;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  line-height: 1;
+}
+.bottom-panel__bottom > * {
+  text-align: center;
+}
 /*!*******************************************************************************************************************************************************************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[1].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[1].use[3]!./node_modules/swiper/swiper.css ***!
   \*******************************************************************************************************************************************************************************************************************************************************/
