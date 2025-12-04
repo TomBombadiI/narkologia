@@ -26653,13 +26653,13 @@ progress {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
   transform: translateY(-2rem) translateX(1rem);
 }
-.doctor__card:last-child .doctor__card-caption {
+.doctor__card:nth-child(2n) .doctor__card-caption {
   align-self: flex-end;
   text-align: right;
   transform: translateY(-2rem) translateX(-1rem);
 }
 @media (max-width: 575.98px) {
-  .doctor__card .doctor__card-caption, .doctor__card:last-child .doctor__card-caption {
+  .doctor__card .doctor__card-caption, .doctor__card:nth-child(2n) .doctor__card-caption {
     transform: translateY(-2rem) translateX(0);
     align-self: center;
     text-align: center;

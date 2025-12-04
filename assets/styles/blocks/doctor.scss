@@ -36,7 +36,7 @@
       transform: translateY(-2rem) translateX(1rem);
     }
 
-    &:last-child {
+    &:nth-child(2n) {
       .doctor__card-caption {
         align-self: flex-end;
         text-align: right;
@@ -46,7 +46,7 @@
     }
 
     @include media-breakpoint-down(sm) {
-      &, &:last-child {
+      &, &:nth-child(2n) {
         .doctor__card-caption {
           transform: translateY(-2rem) translateX(0);
           align-self: center;
