@@ -71,7 +71,7 @@
   &__body {
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
 
     @include media-breakpoint-down(lg) {
       flex-direction: column;

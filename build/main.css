@@ -26451,7 +26451,7 @@ progress {
 .header__body {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 @media (max-width: 991.98px) {
   .header__body {
