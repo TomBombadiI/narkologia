@@ -26724,7 +26724,7 @@ progress {
   overflow: hidden;
 }
 .map__iframe iframe {
-  min-height: 500px;
+  min-height: 300px;
 }
 .map__iframe ymaps {
   max-width: 100% !important;
