@@ -25,6 +25,10 @@
     width: 100%;
     overflow: hidden;
 
+    iframe {
+      min-height: 500px;
+    }
+
     ymaps {
       max-width: 100% !important;
     }
