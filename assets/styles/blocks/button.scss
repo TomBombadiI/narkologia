@@ -1,0 +1,48 @@
+@use '../helpers' as *;
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  border: none;
+  background-color: var(--color-primary);
+  margin: 0;
+  padding: 1rem;
+  border-radius: 10px;
+
+  text-transform: uppercase;
+  color: var(--color-white);
+  font-weight: 700;
+  text-decoration: none;
+
+  @include hover {
+    background-color: var(--color-primary-darken);
+    color: var(--color-white);
+  }
+
+  &--accent {
+    background-color: var(--color-accent);
+
+    @include hover {
+      background-color: var(--color-accent-darken);
+    }
+  }
+
+  &--sm {
+    padding-block: 10px;
+  }
+
+  &--lg {
+    padding: 20px 40px;
+  }
+
+  &--scale-on-hover {
+    transition: scale var(--transition-duration-longer);
+
+    @include hover {
+      scale: 1.03;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@use "../bs" as *;
+
+.header {
+
+  @include media-breakpoint-down(lg) {
+    position: sticky;
+    top: 0;
+    z-index: 1045;
+  }
+
+  a:not(.button) {
+    color: inherit;
+  }
+
+  &__top {
+    @include media-breakpoint-down(lg) {
+      background-color: var(--color-primary);
+      color: var(--color-white);
+    }
+  }
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding-block: 1rem;
+
+    @include media-breakpoint-down(lg) {
+      padding-block: 0;
+    }
+  }
+
+  &__logo {
+    &-link {
+      display: flex;
+      align-items: center;
+      gap: .25rem;
+      text-decoration: none;
+      color: var(--color-text);
+    }
+
+    &-img {
+      width: auto;
+      max-height: 50px;
+      object-fit: contain;
+
+      @include media-breakpoint-down(lg) {
+        max-height: 35px;
+      }
+    }
+
+    &-text {
+      display: flex;
+      flex-direction: column;
+
+      @include media-breakpoint-down(lg) {
+        font-size: 12px;
+
+        strong {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  &__offcanvas {
+    background-color: #e9efff;
+  }
+
+  &__body {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__selling-text {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px solid var(--color-black);
+    padding-left: .5rem;
+
+    strong {
+      color: var(--color-accent);
+    }
+
+    @include media-breakpoint-down(lg) {
+      display: flex !important;
+      border-left: none;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    &-mail {
+      font-size: 18px;
+    }
+  }
+
+  &__actions {
+    display: flex;
+    gap: 1rem;
+
+    @include media-breakpoint-down(lg) {
+      flex-wrap: wrap;
+
+      .button {
+        width: 100%;
+      }
+    }
+  }
+
+  &__burger-button {
+    font-size: 24px;
+    color: var(--color-white);
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+@use "../bs" as *;
+
+.doctor {
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+
+    @include media-breakpoint-down(sm) {
+      gap: 1rem;
+    }
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 420px;
+    position: relative;
+
+    &-image {
+      img {
+        aspect-ratio: 4/3;
+        object-fit: cover;
+        border-radius: 27px;
+      }
+    }
+
+    &-caption {
+      max-width: 280px;
+      background-color: var(--color-white);
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.11);
+      transform: translateY(-2rem) translateX(1rem);
+    }
+
+    &:last-child {
+      .doctor__card-caption {
+        align-self: flex-end;
+        text-align: right;
+        transform: translateY(-2rem) translateX(-1rem);
+      }
+
+    }
+
+    @include media-breakpoint-down(sm) {
+      &, &:last-child {
+        .doctor__card-caption {
+          transform: translateY(-2rem) translateX(0);
+          align-self: center;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

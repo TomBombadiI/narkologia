@@ -1,0 +1,1479 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,">
+    <title>Наркология</title>
+    <link rel="stylesheet" href="./build/main.css">
+    <script src="./build/main.js" defer></script>
+</head>
+<body>
+<header class="header">
+    <div class="header__top">
+        <div class="header__inner container">
+            <div class="header__logo">
+                <a href="./" class="header__logo-link">
+                    <img class="header__logo-img" src="./assets/images/logo.png" width="644" height="483" alt="">
+                    <span class="header__logo-text">
+                    <strong class="h4 mb-0">ГЕРМЕС-Наркология</strong>
+                    НАРКОЛОГИЧЕСКАЯ КЛИНИКА
+                </span>
+                </a>
+            </div>
+            <div class="header__offcanvas offcanvas-lg offcanvas-end" tabindex="-1"
+                 id="offcanvasHeader" aria-labelledby="offcanvasHeaderLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasHeaderLabel">Меню</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                            data-bs-target="#offcanvasHeader" aria-label="Закрыть"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="header__body">
+                        <div class="header__selling-text d-none d-xxl-flex">
+                            Лечение с гарантией результата
+                            <strong>КРУГЛОСУТОЧНО</strong>
+                        </div>
+                        <div class="header__contacts">
+                            <a href="tel:74954890303" class="header__contacts-phone h4 mb-0">+7 (495) 489-03-03</a>
+                            <a href="mailto:klinika.germes@mail.ru"
+                               class="header__contacts-mail">klinika.germes@mail.ru</a>
+                        </div>
+                        <div class="header__soc1als soc1als d-flex d-lg-none">
+                            <a href="#" class="soc1als__link soc1als__link--wa">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fab-whatsapp" viewBox="0 0 448 512"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                                </svg>
+                            </a>
+                            <a href="#" class="soc1als__link soc1als__link--tg">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fab-telegram" viewBox="0 0 496 512"
+                                     xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="header__actions">
+                            <button type="button" class="header__actions-button button button--scale-on-hover"
+                                    data-bs-toggle="modal" data-bs-target="#consultModal">
+                                Консультация
+                            </button>
+                            <a href="tel:74954890303"
+                               class="header__actions-button button button--scale-on-hover button--accent">
+                                Срочный вызов
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="header__burger-button btn" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasHeader" aria-controls="offcanvasHeader">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </div>
+</header>
+<div class="header-bottom pt-3 d-flex flex-column gap-3">
+    <div class="header-bottom__mobile-selling-text h4 mb-0 d-xxl-none d-block container text-center text-uppercase">
+        Помогаем круглосуточно
+    </div>
+    <div class="header-bottom__mobile-actions container">
+        <button type="button" class="header-bottom__actions-button button button--scale-on-hover"
+                data-bs-toggle="modal" data-bs-target="#consultModal">Консультация</button>
+        <a href="tel:74954890303" class="header-bottom__actions-button button button--scale-on-hover button--accent">
+            Срочный вызов
+        </a>
+    </div>
+</div>
+<section class="hero section">
+    <div class="hero__inner container">
+        <div class="hero__top">
+            <div class="hero__top-body">
+                <h1 class="hero__top-title h2">Вывод из запоя на дому в Москве — помощь нарколога круглосуточно</h1>
+                <ul class="hero__top-list">
+                    <li>
+                            <span class="icon">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                            </span>
+                        <span class="text">Лечение от алкоголизма - от 4200 ₽</span>
+                    </li>
+                    <li><span class="icon">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                            </span>
+                        <span class="text">Вывод из запоя - от 1350 ₽</span></li>
+                    <li><span class="icon">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                            </span>
+                        <span class="text">Нарколог на дом - от 1350 ₽</span></li>
+                    <li><span class="icon">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                            </span>
+                        <span class="text">Кодирование - от 2200 ₽</span></li>
+                    <li><span class="icon">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                            </span>
+                        <span class="text">Реабилитация - от 1200 ₽</span></li>
+                    <li><span class="icon">
+                                <svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512"
+                                     xmlns="http://www.w3.org/2000/svg"><path
+                                        d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>
+                            </span>
+                        <span class="text">4 дня средний срок лечения</span></li>
+                </ul>
+                <div class="hero__top-dynamic-text wave-text">
+                    ПОМОГАЕМ УБЕДИТЬ ЛЕЧИТЬСЯ
+                </div>
+                <button type="button" class="hero__top-button button button--accent"
+                        data-bs-toggle="modal" data-bs-target="#consultModal">
+                    Консультация
+                </button>
+            </div>
+            <div class="hero__top-image-wrapper">
+                <img src="./assets/images/hero.jpg" alt="" class="hero__top-image" width="706" height="398">
+                <div class="hero__top-image-caption h2 text-center">
+                    "ГЕРМЕС-Наркология"
+                </div>
+            </div>
+        </div>
+        <div class="hero__bottom">
+            <p class="hero__bottom-accent">
+                При консультации говорим полную стоимость лечения, методы и длительность
+            </p>
+            <p>Бесплатная помощь психологов после лечения</p>
+            <p class="hero__bottom-accent">МЫ ДАЕМ ГАРАНТИИ</p>
+        </div>
+    </div>
+</section>
+<section class="doctor section">
+    <div class="doctor__inner container">
+        <div class="doctor__card">
+            <div class="doctor__card-image">
+                <img src="./assets/images/doctor-1.jpg" alt="">
+            </div>
+            <div class="doctor__card-caption">
+                Лучшая наркологическая клиника.
+                По версии издания
+                <a href="#">«Комсомольская Правда»</a>
+            </div>
+        </div>
+        <div class="doctor__card">
+            <div class="doctor__card-image">
+                <img src="./assets/images/doctor-2.jpg" alt="">
+            </div>
+            <div class="doctor__card-caption">
+                <div class="h4"><strong>Тихонов Андрей Михайлович</strong></div>
+                Врач психиатр-нарколог,
+                главный врач, стаж 21 год
+            </div>
+        </div>
+    </div>
+</section>
+<section class="banner section">
+    <div class="banner__inner container">
+        <div class="banner__title h1 mb-0">Получите Скидку 10% на кодирование</div>
+        <button type="button" class="button"
+                data-bs-toggle="modal" data-bs-target="#consultModal">Оставить заявку</button>
+    </div>
+</section>
+<section class="map section">
+    <div class="map__inner container">
+        <h2 class="map__title">
+            Укажите ваш адрес
+        </h2>
+        <div class="map__body">
+            <div class="map__iframe">
+                <div id="map" style="width: 100%; height: 100%;"></div>
+                <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&apikey=f4e33f77-e6a2-458e-9a3a-37e427b70f48&suggest_apikey=07c70983-537d-484a-a1aa-c0704cb7ccc8"
+                        type="text/javascript"></script>
+                <script>
+                    ymaps.ready(function () {
+                        // Генерация точки А в радиусе 3–5 км
+                        function randomPointFromRadius(center, minKm, maxKm) {
+                            var R = 6371;
+                            var minDist = minKm / R;
+                            var maxDist = maxKm / R;
+                            var dist = Math.random() * (maxDist - minDist) + minDist;
+                            var angle = Math.random() * 2 * Math.PI;
+                            var lat1 = center[0] * Math.PI / 180;
+                            var lon1 = center[1] * Math.PI / 180;
+                            var lat2 = Math.asin(Math.sin(lat1) * Math.cos(dist) +
+                                Math.cos(lat1) * Math.sin(dist) * Math.cos(angle));
+                            var lon2 = lon1 + Math.atan2(Math.sin(angle) * Math.sin(dist) * Math.cos(lat1),
+                                Math.cos(dist) - Math.sin(lat1) * Math.sin(lat2));
+                            return [
+                                lat2 * 180 / Math.PI,
+                                lon2 * 180 / Math.PI
+                            ];
+                        }
+
+                        var startCoords = [55.875238, 37.577858]; // Центр карты и ваша фиксированная точка
+
+                        var myMap = new ymaps.Map('map', {
+                            center: startCoords,
+                            zoom: 13,
+                            controls: []
+                        });
+
+                        var myPlacemarkB; // Точка B создаётся после поиска
+                        var myPlacemarkA; // Точка A создаётся динамически
+
+                        var multiRoute;
+
+                        // Поиск
+                        var searchControl = new ymaps.control.SearchControl({
+                            options: {
+                                provider: 'yandex#search',
+                                noPlacemark: true,
+                                resultsPerPage: 15
+                            }
+                        });
+                        myMap.controls.add(searchControl);
+
+                        // --- Проверка региона и построение маршрута ---
+                        searchControl.events.add('resultselect', function () {
+                            var results = searchControl.getResultsArray();
+                            var selectedIndex = searchControl.getSelectedIndex();
+                            if (results && results[selectedIndex] && results[selectedIndex].geometry) {
+                                var newPointB = results[selectedIndex].geometry.getCoordinates();
+
+                                ymaps.geocode(newPointB).then(function (res) {
+                                    var addressObj = res.geoObjects.get(0);
+                                    var province = addressObj.getAdministrativeAreas();
+                                    var localities = addressObj.getLocalities();
+
+                                    var isMoscow = false;
+                                    var isMoscowRegion = false;
+
+                                    // Проверка: Москва
+                                    if (localities && localities[0] && /москва/i.test(localities[0])) isMoscow = true;
+                                    // Проверка: Московская область
+                                    if (province && province.length) {
+                                        isMoscowRegion = province.some(function (item) {
+                                            return /московская\s*обл/i.test(item);
+                                        });
+                                    }
+
+                                    var routePointA; // координаты точки А
+
+                                    // --- Кейс для Москвы и области ---
+                                    if (isMoscow || isMoscowRegion) {
+                                        routePointA = randomPointFromRadius(newPointB, 3, 5);
+
+                                        // Метка A
+                                        if (!myPlacemarkA) {
+                                            myPlacemarkA = new ymaps.Placemark(routePointA, {
+                                                hintContent: 'Выездная бригада',
+                                                balloonContent: 'Выездная бригада'
+                                            }, {
+                                                iconLayout: 'default#image',
+                                                iconImageHref: 'https://img.icons8.com/?size=100&id=14739&format=png&color=000000',
+                                                iconImageSize: [32, 32],
+                                                iconImageOffset: [0, 0],
+                                                zIndex: 99999
+                                            });
+                                            myMap.geoObjects.add(myPlacemarkA);
+                                        } else {
+                                            myPlacemarkA.geometry.setCoordinates(routePointA);
+                                        }
+                                    }
+                                    // --- Кейс для других регионов ---
+                                    else {
+                                        routePointA = startCoords;
+
+                                        // Метка A фиксированная
+                                        if (!myPlacemarkA) {
+                                            myPlacemarkA = new ymaps.Placemark(routePointA, {
+                                                hintContent: 'Главная точка',
+                                                balloonContent: 'Главная точка'
+                                            }, {
+                                                iconLayout: 'default#image',
+                                                iconImageHref: 'https://img.icons8.com/?size=100&id=14739&format=png&color=000000',
+                                                iconImageSize: [32, 32],
+                                                iconImageOffset: [0, 0],
+                                                zIndex: 99999
+                                            });
+                                            myMap.geoObjects.add(myPlacemarkA);
+                                        } else {
+                                            myPlacemarkA.geometry.setCoordinates(routePointA);
+                                        }
+                                    }
+
+                                    // Метка B (адрес пользователя)
+                                    if (!myPlacemarkB) {
+                                        myPlacemarkB = new ymaps.Placemark(newPointB, {
+                                            hintContent: 'Точка B',
+                                            balloonContent: 'Это точка B'
+                                        });
+                                        myMap.geoObjects.add(myPlacemarkB);
+                                    } else {
+                                        myPlacemarkB.geometry.setCoordinates(newPointB);
+                                    }
+
+                                    // Маршрут
+                                    if (multiRoute) myMap.geoObjects.remove(multiRoute);
+
+                                    multiRoute = new ymaps.multiRouter.MultiRoute({
+                                        referencePoints: [
+                                            routePointA,
+                                            newPointB
+                                        ],
+                                        params: { routingMode: 'auto' }
+                                    }, {
+                                        boundsAutoApply: true,
+                                        hideAltRoute: true
+                                    });
+
+                                    myMap.geoObjects.add(multiRoute);
+                                    myMap.setCenter(newPointB, 13);
+                                });
+
+                            }
+                        });
+
+
+                        // --- Значок геолокации Яндекса ---
+                        ymaps.geolocation.get({
+                            provider: 'browser',
+                            mapStateAutoApply: false
+                        }).then(function (result) {
+                            myMap.geoObjects.add(result.geoObjects);
+                        });
+
+                        window.addEventListener('resize', () => {
+                            myMap.container.fitToViewport();
+                            myMap.setCenter(startCoords);
+                        });
+
+                    });
+                </script>
+            </div>
+            <div class="map__caption">
+                <p class="h4">Близжайший врач будет у вас через 15 минут</p>
+                <p>В стоимость услуг&nbsp; входит:</p>
+                <ul>
+                    <li>Диагностика</li>
+                    <li>Терапия</li>
+                    <li>Осмотр</li>
+                    <li>Базовая капельница&nbsp;</li>
+                </ul>
+                <p>Вы можете позвонить в поддержку если у вас возникли вопросы</p>
+                <p><a href="tel:+74954890303" class="h4" style="color: var(--color-primary);"><strong>Звонок в
+                    поддержку</strong></a></p>
+                <p>Или оставьте заявку мы вам перезвоним</p>
+                <button type="button" class="button mx-auto"
+                        data-bs-toggle="modal" data-bs-target="#consultModal">Вызвать врача</button>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section-content section container">
+    <h2 class="h1">
+        Вывод из запоя в Москве и Московской области: своевременная помощь спасает жизнь
+    </h2>
+    <p>
+        Запой — это не просто «тяжелое похмелье», а опасное патологическое состояние, при котором организм теряет
+        способность самостоятельно справиться с последствиями постоянного употребления алкоголя. Каждый день,
+        проведённый в запое, усугубляет интоксикацию, разрушает внутренние органы и усугубляет психическое состояние.
+        Откладывая помощь, человек подвергает себя риску необратимых последствий, включая инсульт, инфаркт, алкогольный
+        психоз и даже летальный исход. Вывод из запоя в Москве и Московской области — это не просто медицинская
+        процедура, а реальный шанс на возвращение к трезвой и полноценной жизни.
+    </p>
+    <hr>
+    <h3>Почему нельзя ждать и «выйти самому»</h3>
+    <p>
+        Многие ошибочно полагают, что запой можно «переждать» или «выспаться». На самом деле, организм в этот период
+        находится в критическом состоянии: обезвожен, отравлен токсинами, лишен витаминов и электролитов. Попытки
+        самостоятельно прекратить употребление часто приводят к тяжелой абстиненции — симптомы которой (судороги,
+        галлюцинации, резкие скачки давления) могут быть смертельно опасны. Только квалифицированная наркологическая
+        помощь позволяет безопасно вывести пациента из запоя, минимизируя риски и облегчая страдания.
+    </p>
+    <hr>
+    <h3>Что такое запой: этапы и признаки</h3>
+    <p>Запой — это циклическое, непрерывное употребление алкоголя в течение нескольких дней или даже недель с целью
+        избежать мучительного похмельного синдрома. Со временем это превращается в замкнутый круг: алкоголь временно
+        снимает симптомы, но усугубляет зависимость и разрушает организм.</p>
+    <p><strong>Основные стадии запоя:</strong></p>
+    <ul dir="auto">
+        <li><p><strong>Начальная стадия.</strong> Появляется устойчивое влечение к алкоголю, человек начинает
+            «поддерживать» состояние спиртным, чтобы избежать похмелья. На этом этапе еще возможны самостоятельные
+            попытки остановиться, но они часто заканчиваются срывом.</p></li>
+        <li><p><strong>Средняя стадия.</strong> Абстинентный синдром становится выраженным: дрожь, тошнота, тревожность,
+            бессонница. Алкоголь воспринимается как единственное «лекарство», а сам больной отрицает наличие проблемы.
+        </p></li>
+        <li><p><strong>Тяжелая стадия.</strong> Нарушается работа всех систем организма. Возможны галлюцинации,
+            спутанность сознания, резкое снижение когнитивных функций. На этом этапе самостоятельный выход из запоя
+            практически невозможен и крайне опасен.</p></li>
+    </ul>
+    <hr>
+    <h3>Типичные симптомы запоя</h3>
+    <p>Родные и близкие часто замечают следующие признаки:</p>
+    <ul dir="auto">
+        <li>постоянная раздражительность, агрессия или, наоборот, полная апатия;</li>
+        <li>нарушение сна, бессонница или дневная сонливость;</li>
+        <li>дрожь в руках, потливость, учащённое сердцебиение;</li>
+        <li>отказ от еды, потеря веса, обезвоживание;</li>
+        <li>спутанная речь, нарушение координации, провалы в памяти.</li>
+    </ul>
+    <p>Если эти симптомы наблюдаются более двух дней подряд — это сигнал к немедленному обращению за наркологической
+        помощью.</p>
+    <hr>
+    <h3>Последствия длительного запоя</h3>
+    <p>Каждый день запоя — это удар по печени, сердцу, поджелудочной железе и головному мозгу. Возникает риск:</p>
+    <ul dir="auto">
+        <li>цирроза печени;</li>
+        <li>алкогольной кардиомиопатии;</li>
+        <li>панкреатита;</li>
+        <li>инсульта и инфаркта;</li>
+        <li>алкогольного делирия («белой горячки») — состояния, угрожающего жизни.</li>
+    </ul>
+    <p>Психически человек также страдает: развивается тревожность, депрессия, паранойя. Без лечения это может привести к
+        полной социальной дезадаптации и утрате контроля над собственной жизнью.</p>
+    <hr>
+    <h3>Когда и зачем вызывать нарколога на дом</h3>
+    <p>Вывод из запоя на дому — это современный, комфортный и безопасный способ начать лечение. Особенно актуален, если
+        пациент отказывается ехать в клинику или боится потерять анонимность. Врач приезжает в любую точку Москвы и
+        Московской области в течение 30–60 минут, проводит осмотр и начинает терапию на месте.</p>
+    <p><strong>Вызов врача необходим, если:</strong></p>
+    <ul dir="auto">
+        <li>запой длится более 48 часов;</li>
+        <li>наблюдаются тошнота, рвота, сильная дрожь;</li>
+        <li>повышено или нестабильно артериальное давление;</li>
+        <li>пациент агрессивен, растерян или вял;</li>
+        <li>есть признаки обезвоживания: сухость во рту, отсутствие мочеиспускания, бледность кожи.</li>
+    </ul>
+    <hr>
+    <h3>Дом или стационар: где лучше выводить из запоя?</h3>
+    <p><strong>На дому</strong> — идеальный вариант при умеренной интоксикации. Врач проведёт инфузионную терапию,
+        снимет интоксикацию, восстановит водно-солевой баланс и назначит поддерживающие препараты. Процедура занимает от
+        2 до 4 часов, пациент остаётся в привычной обстановке, а информация остаётся конфиденциальной.</p>
+    <p><strong>В стационаре</strong> — требуется при тяжёлых формах запоя, наличии хронических заболеваний, риске
+        развития делирия или других опасных осложнений. В клинике возможен круглосуточный мониторинг, экстренная
+        диагностика и расширенная терапия, включая детоксикацию, витаминную поддержку, психотерапевтическую помощь и
+        подготовку к дальнейшему лечению зависимости.</p>
+    <hr>
+    <h3>Не откладывайте помощь на потом</h3>
+    <p>Вывод из запоя — это не «разовая услуга», а первый шаг к выздоровлению. В Москве и Московской области работают
+        опытные наркологи, готовые приехать в любое время суток и оказать квалифицированную помощь без осуждения и
+        бюрократии. Чем раньше начнётся лечение, тем выше шансы на полное восстановление и возвращение к нормальной
+        жизни.</p>
+    <p><strong>Ваше здоровье и спокойствие вашей семьи — в ваших руках. Не ждите катастрофы. Позвоните сейчас.</strong>
+    </p>
+
+    <button class="button mt-5 mx-auto" type="button"
+            data-bs-toggle="modal" data-bs-target="#consultModal">Вызвать врача</button>
+</section>
+<section class="benefits section">
+    <div class="benefits__inner container">
+        <ul class="benefits__list">
+            <li class="benefits__item">
+                <div class="benefits__item-icon">
+                    <img src="./assets/images/benefits/1.png" width="175" height="175" alt="">
+                </div>
+                <h3 class="benefits__item-title h4">
+                    Высококачественные импортные препараты
+                </h3>
+                <div class="benefits__item-description">
+                    В нашем центре используются только импортные препараты, которые прошли строгую сертификацию и
+                    доказали свою эффективность при лечении алкогольной зависимости. Препараты способствуют быстрому
+                    выведению токсинов, нормализации работы органов и систем, а также стабилизации психоэмоционального
+                    состояния. Наши наркологи подберут индивидуальную программу лечения с использованием самых
+                    эффективных медикаментов, что ускорит восстановление пациента и обеспечит максимальный результат.
+                </div>
+            </li>
+            <li class="benefits__item">
+                <div class="benefits__item-icon">
+                    <img src="./assets/images/benefits/2.png" width="175" height="175" alt="">
+                </div>
+                <h3 class="benefits__item-title h4">
+                    Платные услуги высокого качества
+                </h3>
+                <div class="benefits__item-description">
+                    Мы понимаем, что многие боятся высоких цен на медицинские услуги. Но в нашем центре цена на платный
+                    вывод из запоя вас не разочарует. Мы предлагаем недорогое лечение при высоком уровне
+                    профессионализма и комфорта. Вы платите только за то, что действительно необходимо для качественного
+                    восстановления, а наши специалисты помогут вам избежать ненужных расходов.
+                </div>
+            </li>
+            <li class="benefits__item">
+                <div class="benefits__item-icon">
+                    <img src="./assets/images/benefits/3.png" width="175" height="175" alt="">
+                </div>
+                <h3 class="benefits__item-title h4">
+                    Вывод из запоя на дому и в стационаре
+                </h3>
+                <div class="benefits__item-description">
+                    Мы предлагаем вывод из запоя на дому в Москве для тех, кто не может или не хочет посещать
+                    медицинское учреждение. Процедура будет проведена в комфортной обстановке, что также поможет снизить
+                    стресс пациента. Если же ситуация требует более серьезного вмешательства или наблюдения, мы
+                    предоставляем возможность пройти лечение в стационаре, где за вами круглосуточно будут наблюдать
+                    опытные врачи. В нашем стационаре созданы все условия для быстрого восстановления и избавления от
+                    зависимости.
+                </div>
+            </li>
+            <li class="benefits__item">
+                <div class="benefits__item-icon">
+                    <img src="./assets/images/benefits/4.png" width="175" height="175" alt="">
+                </div>
+                <h3 class="benefits__item-title h4">
+                    Гарантия результата
+                </h3>
+                <div class="benefits__item-description">
+                    Мы понимаем, что вывод из запоя — это не просто медицинская процедура, а процесс восстановления и
+                    возвращения к нормальной жизни. В нашем центре работают только опытные и квалифицированные
+                    наркологи, которые используют проверенные методы лечения. Вывод из запоя на дому в Москве — это не
+                    просто выполнение обязательных процедур, это процесс, который мы делаем максимально комфортным для
+                    пациента. Мы гарантируем, что вы почувствуете значительное улучшение состояния в кратчайшие сроки.
+                </div>
+            </li>
+            <li class="benefits__item">
+                <div class="benefits__item-icon">
+                    <img src="./assets/images/benefits/5.png" width="175" height="175" alt="">
+                </div>
+                <h3 class="benefits__item-title h4">
+                    Анонимность и конфиденциальность
+                </h3>
+                <div class="benefits__item-description">
+                    Мы понимаем, что проблема алкоголизма — это очень личная тема, которая вызывает стеснение и
+                    неловкость. Поэтому мы гарантируем полную анонимность и конфиденциальность на всех этапах лечения.
+                    Ваше обращение в наш центр останется анонимным, а данные о лечении не будут раскрыты никому, кроме
+                    вас и ваших близких. Мы обеспечим полную защиту ваших персональных данных как в процессе работы, так
+                    и после ее завершения.
+                </div>
+            </li>
+            <li class="benefits__item">
+                <div class="benefits__item-icon">
+                    <img src="./assets/images/benefits/6.png" width="175" height="175" alt="">
+                </div>
+                <h3 class="benefits__item-title h4">
+                    Опытные врачи и квалифицированная помощь
+                </h3>
+                <div class="benefits__item-description">
+                    Наши специалисты — это опытные врачи-наркологи, которые знают, как быстро и безболезненно вывести
+                    пациента из запоя, а также как предотвратить рецидивы. Мы работаем с каждым пациентом индивидуально,
+                    принимая во внимание все его особенности, чтобы обеспечить максимальное облегчение и стабилизацию
+                    состояния. Наши врачи всегда готовы помочь, они внимательно следят за процессом и корректируют
+                    лечение в зависимости от состояния пациента.
+                </div>
+            </li>
+            <li class="benefits__item">
+                <div class="benefits__item-icon">
+                    <!--suppress CheckImageSize -->
+                    <img src="./assets/images/benefits/7.png" width="175" height="175" alt="">
+                </div>
+                <h3 class="benefits__item-title h4">
+                    Срочная помощь 24/7
+                </h3>
+                <div class="benefits__item-description">
+                    Запой может случиться в любой момент, и важно получить помощь сразу. Мы предлагаем срочный вывод из
+                    запоя, который поможет избавиться от неприятных симптомов, таких как головная боль, тошнота и
+                    психоэмоциональные расстройства. Мы работаем круглосуточно и всегда готовы оказать помощь в любое
+                    время суток. Вам достаточно просто вызвать нашего нарколога, и в течение 30–60 минут он будет у вас,
+                    готовый оказать необходимую помощь.
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<section class="reviews section">
+    <div class="reviews__inner container">
+        <h2 class="reviews__title text-center">Отзывы наших пациентов</h2>
+        <div class="reviews__slider swiper">
+            <div class="reviews__slider-wrapper swiper-wrapper">
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Очень боялась обращаться за помощью, думала, что меня не поймут. В Гермесе меня поддержали с
+                        первого звонка. Врач приехал быстро, всё объяснил по‑человечески, не осуждал. После капельницы
+                        стало намного легче, спасибо вам большое за заботу!
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Алина
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Обратился в Гермес по совету друга. Было тяжело, но специалисты реально знают своё дело. Всё
+                        сделали аккуратно, без лишних разговоров, не пришлось ехать в больницу. Уже на следующий день
+                        почувствовал себя человеком.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Михаил
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Хочу поблагодарить врачей клиники за терпение и поддержку. Кодировку сделали у меня дома, всё
+                        прошло спокойно. Очень переживала за анонимность — всё на высшем уровне. Теперь живу без
+                        алкоголя, наконец‑то начала верить в себя.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Елена
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Не думал, что когда‑нибудь буду писать такие отзывы, но реально стало легче только после того,
+                        как обратился сюда. Сначала не верил, что что‑то поможет, но тут врачи не просто прокапали, а
+                        еще поддержали морально. Спасибо большое!
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Аноним
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        В Гермес‑Наркология обращались для лечения мужа. Сначала был против, но врачи нашли к нему
+                        подход, всё объяснили спокойно. Сейчас муж уже второй месяц трезвый, спасибо за помощь и
+                        терпение!
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Аноним
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Понравилось, что приехали ночью, не пришлось ждать до утра. Врач опытный, медсёстры
+                        внимательные. Всё прошло быстро, даже соседи ничего не заметили. Спасибо, что не бросили в
+                        трудный момент.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Дмитрий
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Очень боялась обращаться в клинику, но другого выхода не было. Девочки на телефоне поддержали,
+                        врач приехал быстро, всё объяснил. Сделали капельницу, назначили лечение. Через пару дней
+                        почувствовала себя намного лучше. Спасибо!
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Марина
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Проходил реабилитацию после запоя. Не ожидал, что будет настолько по‑человечески: никто не
+                        давил, помогли не только физически, но и морально. Врач всегда был на связи, спасибо за
+                        честность и поддержку.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Аноним
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Спасибо всем сотрудникам клиники. Очень помогли, когда никто больше не верил, что смогу
+                        отказаться от алкоголя. Здесь не ругают, не кричат, а поддерживают и реально помогают. Сейчас
+                        чувствую себя гораздо лучше.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Анна
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Вызывали нарколога на дом для папы. Всё прошло спокойно, врач очень вежливый, рассказал, что и
+                        как будет делать. Папа уже на следующий день был бодрее. Огромное спасибо, что не оставили в
+                        беде!
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Виктория
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Не люблю больницы, но тут всё было по‑другому. Врач приехал, не спрашивал лишнего, быстро
+                        поставил капельницу. Через пару часов стало легче. Хорошо, что есть такие службы.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Аноним
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Долго не могла решиться обратиться, стыдно было. Но тут встретили с пониманием. Помогли не
+                        только мне, но и всей семье — объяснили, что делать, как поддерживать. Большое человеческое
+                        спасибо!
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Аноним
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Если бы не Гермес‑Наркология, не знаю, чем бы всё закончилось. Очень благодарен врачам за
+                        быструю помощь, всё по делу, без лишних слов и осуждений.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Павел
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Спасибо за то, что помогли начать новую жизнь. Долго не верила, что получится справиться, но
+                        после лечения реально стало легче. Отдельно спасибо врачу, который всегда был на связи.
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Светлана
+                    </div>
+                </div>
+                <div class="reviews__slider-slide swiper-slide">
+                    <div class="reviews__slider-slide-text">
+                        Обращался уже не в первый раз, и всегда помогали быстро и профессионально. Никто не осуждает,
+                        все очень человечные. Огромное спасибо за поддержку!
+                    </div>
+                    <div class="reviews__slider-slide-author">
+                        Алексей
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+
+            <div class="swiper-button-prev">
+                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewBox="0 0 1000 1000"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path>
+                </svg>
+            </div>
+            <div class="swiper-button-next">
+                <svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewBox="0 0 1000 1000"
+                     xmlns="http://www.w3.org/2000/svg">
+                    <path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path>
+                </svg>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq section">
+    <div class="faq__inner container">
+        <h2 class="faq__title text-center mb-4">Часто задаваемые вопросы (FAQ)</h2>
+        <div class="faq__accordion">
+            <div class="accordion" id="faqAccordion">
+                <!-- 1 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
+                            Сколько длится процедура?
+                        </button>
+                    </h2>
+                    <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p><span style="font-weight: 400;">Обычно выведение из запоя на дому занимает от 1 до 3 часов. В простых случаях достаточно одной капельницы, чтобы снять симптомы абстиненции и стабилизировать работу нервной системы. Если запой длился несколько дней или больше, врач может назначить дополнительную инфузию или более длительный курс лечения.</span>
+                            </p>
+                            <p><span style="font-weight: 400;">Важно, что врач остается рядом с пациентом до нормализации общего самочувствия. После процедуры специалист даст рекомендации по дальнейшему лечению и, при необходимости, направит в реабилитационный центр.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                            Какие препараты используются?
+                        </button>
+                    </h2>
+                    <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p><span style="font-weight: 400;">Основной метод — инфузионная терапия, когда препараты вводятся внутривенно. Врач подбирает состав капельницы, исходя из тяжести состояния и особенностей организма. Чаще всего используются:</span>
+                            </p>
+                            <ul>
+                                <li style="font-weight: 400;" aria-level="1"><i><span style="font-weight: 400;">солевые растворы;</span></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="font-weight: 400;" aria-level="1"><i><span style="font-weight: 400;">дезинтоксикационные препараты;</span></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="font-weight: 400;" aria-level="1"><i><span style="font-weight: 400;">витамины и микроэлементы;</span></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="font-weight: 400;" aria-level="1"><i><span style="font-weight: 400;">седативные средства;</span></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="font-weight: 400;" aria-level="1"><i><span style="font-weight: 400;">препараты для защиты печени и сердца;</span></i>
+                                </li>
+                            </ul>
+                            <ul>
+                                <li style="font-weight: 400;" aria-level="1"><i><span style="font-weight: 400;">противорвотные и обезболивающие.</span></i>
+                                </li>
+                            </ul>
+                            <p><span style="font-weight: 400;">По показаниям добавляются ноотропы или антидепрессанты. Такой комплекс позволяет вывести из запоя, улучшить самочувствие, снизить риски осложнений и подготовить пациента к дальнейшим шагам в лечении алкоголизма.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-3">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                            Насколько безопасно домашнее лечение?
+                        </button>
+                    </h2>
+                    <div id="collapse-3" class="accordion-collapse collapse" aria-labelledby="heading-3"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p><span style="font-weight: 400;">Вывод из запоя врачом наркологом на дому проводится только после исключения противопоказаний. Это гарантирует, что процедура не нанесет вреда. Врач контролирует уровень давления, работу сердца и дыхания, наблюдает за реакцией организма на препараты. Благодаря этому риск осложнений минимален.&nbsp;</span>
+                            </p>
+                            <p><span style="font-weight: 400;">Конечно, при тяжелых психозах или угрожающих состояниях лучше выбрать стационар. Но при среднетяжелом течении именно вызов нарколога на дом становится оптимальным решением: сохраняются комфортные условия, обеспечивается анонимность, а близкие могут находиться рядом.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                            Что нужно, чтобы подготовиться к визиту врача?
+                        </button>
+                    </h2>
+                    <div id="collapse-4" class="accordion-collapse collapse" aria-labelledby="heading-4"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p><span style="font-weight: 400;">Стоит обеспечить доступ к свободному месту, где врач сможет установить капельницу и провести осмотр. Желательно заранее приготовить документы пациента и список принимаемых лекарств, если они есть.</span>
+                            </p>
+                            <p><span style="font-weight: 400;">Для родственников важно помнить: по закону лечение проводится только при добровольном согласии пациента. Но при тяжелых психических нарушениях, угрозе себе или окружающим возможно принудительное выведение из запоя. В этом случае проводится медицинское освидетельствование, и решение принимается официально, чтобы пациент получил необходимую помощь.</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-5" aria-expanded="false" aria-controls="collapse-5">
+                            Что такое хронические заболевания?
+                        </button>
+                    </h2>
+                    <div id="collapse-5" class="accordion-collapse collapse" aria-labelledby="heading-5"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Хронические заболевания — это длительные болезни, которые развиваются постепенно и
+                                сохраняются на протяжении многих лет. К ним относят сахарный диабет, гипертонию,
+                                ишемическую болезнь сердца, артрит, бронхиальную астму. Такие состояния требуют
+                                постоянного наблюдения и контроля. Полностью вылечить большинство хронических болезней
+                                невозможно, но при правильном подходе их течение можно стабилизировать. Лекарственная
+                                терапия, коррекция образа жизни, отказ от вредных привычек и регулярные обследования
+                                помогают снизить риск осложнений и улучшить самочувствие пациента.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-6" aria-expanded="false" aria-controls="collapse-6">
+                            Что такое наркологический центр?
+                        </button>
+                    </h2>
+                    <div id="collapse-6" class="accordion-collapse collapse" aria-labelledby="heading-6"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Наркологический центр — это специализированное медицинское учреждение, где пациентам
+                                оказывают помощь при алкогольной, наркотической и другой зависимостях. Здесь проводят
+                                детоксикацию, купирование абстиненции, медикаментозное лечение и психотерапию. Важным
+                                направлением работы является реабилитация и социальная адаптация, позволяющая человеку
+                                вернуться к полноценной жизни. В наркологическом центре помощь оказывается анонимно и
+                                конфиденциально, с индивидуальным подбором программ для каждого пациента. Обращение к
+                                специалистам позволяет не только остановить употребление, но и снизить риск рецидива,
+                                укрепить здоровье и стабилизировать психоэмоциональное состояние.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-7">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-7" aria-expanded="false" aria-controls="collapse-7">
+                            Почему важно обратиться прямо сейчас?
+                        </button>
+                    </h2>
+                    <div id="collapse-7" class="accordion-collapse collapse" aria-labelledby="heading-7"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Обратиться в наркологический центр прямо сейчас важно, потому что каждая отсрочка
+                                усугубляет течение зависимости и повышает риск осложнений. Чем раньше начнётся лечение,
+                                тем легче стабилизировать состояние, снять абстинентный синдром и предотвратить развитие
+                                психических или соматических нарушений. Специалисты центра работают круглосуточно,
+                                оказывая помощь как на дому, так и в стационаре. Пациенту гарантируется
+                                конфиденциальность и индивидуальный подход. Срочное обращение позволяет быстро
+                                восстановить здоровье, снизить риск рецидива и вернуть контроль над жизнью.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-8">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-8" aria-expanded="false" aria-controls="collapse-8">
+                            Какие болезни относятся к заболеваниям головного мозга?
+                        </button>
+                    </h2>
+                    <div id="collapse-8" class="accordion-collapse collapse" aria-labelledby="heading-8"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>К заболеваниям головного мозга относят инсульты, опухоли, эпилепсию, болезнь Паркинсона,
+                                болезнь Альцгеймера, энцефалиты и рассеянный склероз. Эти патологии могут быть
+                                врождёнными или приобретёнными. Они проявляются нарушением памяти, речи, движений,
+                                изменением поведения и психоэмоционального состояния. Для диагностики используют МРТ,
+                                КТ, электроэнцефалографию и лабораторные анализы. Раннее обращение к врачу позволяет
+                                замедлить прогрессирование болезни, улучшить качество жизни пациента и предупредить
+                                тяжёлые осложнения.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-9">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-9" aria-expanded="false" aria-controls="collapse-9">
+                            Почему важно контролировать состояния здоровья?
+                        </button>
+                    </h2>
+                    <div id="collapse-9" class="accordion-collapse collapse" aria-labelledby="heading-9"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Состояния здоровья напрямую влияют на качество жизни и работоспособность человека. Даже
+                                незначительные изменения могут указывать на скрытые болезни, поэтому важно уделять
+                                внимание регулярным обследованиям и консультациям специалистов. Своевременная
+                                диагностика помогает выявить риски на раннем этапе и предотвратить осложнения. Забота о
+                                состояниях здоровья включает правильное питание, физическую активность, отказ от вредных
+                                привычек и достаточный сон. Такой подход позволяет поддерживать организм в стабильном
+                                состоянии и снижает вероятность развития хронических заболеваний.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-10">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-10" aria-expanded="false" aria-controls="collapse-10">
+                            Как работает горячей линии?
+                        </button>
+                    </h2>
+                    <div id="collapse-10" class="accordion-collapse collapse" aria-labelledby="heading-10"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Горячей линии открыта круглосуточно и помогает получить срочную консультацию
+                                врача-нарколога или психолога. <br>Достаточно одного звонка, чтобы задать вопросы о
+                                лечении зависимости, узнать о возможностях вызова специалиста на дом или записаться в
+                                клинику. <br>Горячей линии обеспечивает анонимность и доступность:&nbsp; обращаться
+                                можно в любое время суток. <br>Это удобный способ сделать первый шаг к выздоровлению и
+                                получить поддержку без лишних формальностей и ожидания.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-11">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-11" aria-expanded="false" aria-controls="collapse-11">
+                            Почему важно поддерживать здоровый образ жизни?
+                        </button>
+                    </h2>
+                    <div id="collapse-11" class="accordion-collapse collapse" aria-labelledby="heading-11"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Образ жизни напрямую влияет на физическое и психическое здоровье человека. Регулярная
+                                активность, правильное питание, отказ от вредных привычек и полноценный сон помогают
+                                укрепить организм и снизить риск хронических заболеваний. Образ жизни отражается на
+                                энергии, настроении и работоспособности. Если он построен на полезных привычках, человек
+                                чувствует себя лучше, легче переносит нагрузки и дольше сохраняет активность.</p>
+                            <p>Здоровый образ жизни — это основа долгой и качественной жизни без серьёзных проблем со
+                                здоровьем.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-12">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-12" aria-expanded="false" aria-controls="collapse-12">
+                            Почему важно учитывать наличие сопутствующих заболеваний при лечении зависимости?
+                        </button>
+                    </h2>
+                    <div id="collapse-12" class="accordion-collapse collapse" aria-labelledby="heading-12"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>При наркологической помощи обязательно учитывается наличие сопутствующих заболеваний. У
+                                пациентов с алкогольной или наркотической зависимостью часто выявляются диабет,
+                                гипертония, болезни сердца и печени. Игнорирование сопутствующих заболеваний может
+                                привести к осложнениям во время детоксикации и подбора терапии. Врач-нарколог назначает
+                                обследования, подбирает щадящие препараты и контролирует общее состояние пациента. Такой
+                                подход делает лечение более безопасным и эффективным, снижает риски для здоровья и
+                                повышает шансы на устойчивый результат.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13 -->
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="heading-13">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse-13" aria-expanded="false" aria-controls="collapse-13">
+                            Как вызвать врача?
+                        </button>
+                    </h2>
+                    <div id="collapse-13" class="accordion-collapse collapse" aria-labelledby="heading-13"
+                         data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            <p>Вызвать врача можно круглосуточно, позвонив в наркологический центр или оставив заявку на
+                                сайте. Специалист приедет в течение 30–60 минут, проведёт осмотр, установит капельницу,
+                                подберёт препараты и стабилизирует состояние пациента. Вызвать врача удобно в ситуациях
+                                запоя, тяжёлого похмелья, абстиненции или отказа пациента ехать в стационар. Обращение
+                                конфиденциально, все процедуры выполняются анонимно. Чем раньше вызвать врача, тем выше
+                                шансы избежать осложнений и быстрее начать полноценное лечение зависимости.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<section class="map-image section">
+    <div class="map-image__inner container">
+        <h2 class="map-image__title text-center">Быстрый приезд к пациенту на дом.
+            Дежурят более 35 бригад скорой помощи.</h2>
+        <div class="map-image__image">
+            <img src="./assets/images/map-image.jpg" width="1500" height="957" alt="">
+        </div>
+    </div>
+</section>
+<section class="benefits-alt section">
+    <div class="benefits-alt__inner container">
+        <ul class="benefits-alt__list">
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-money-bill-alt" viewBox="0 0 640 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M352 288h-16v-88c0-4.42-3.58-8-8-8h-13.58c-4.74 0-9.37 1.4-13.31 4.03l-15.33 10.22a7.994 7.994 0 0 0-2.22 11.09l8.88 13.31a7.994 7.994 0 0 0 11.09 2.22l.47-.31V288h-16c-4.42 0-8 3.58-8 8v16c0 4.42 3.58 8 8 8h64c4.42 0 8-3.58 8-8v-16c0-4.42-3.58-8-8-8zM608 64H32C14.33 64 0 78.33 0 96v320c0 17.67 14.33 32 32 32h576c17.67 0 32-14.33 32-32V96c0-17.67-14.33-32-32-32zM48 400v-64c35.35 0 64 28.65 64 64H48zm0-224v-64h64c0 35.35-28.65 64-64 64zm272 192c-53.02 0-96-50.15-96-112 0-61.86 42.98-112 96-112s96 50.14 96 112c0 61.87-43 112-96 112zm272 32h-64c0-35.35 28.65-64 64-64v64zm0-224c-35.35 0-64-28.65-64-64h64v64z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Специальные скидки для пенсионеров, подростков и участников СВО
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Наша частная клиника предлагает выгодные скидки для пенсионеров, подростков и участников СВО.
+                    Независимо от того, нужна ли помощь для мужчины, женский подход, поддержка для сына или дочери, мы
+                    подберем оптимальное решение.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-hand-holding-medical" viewBox="0 0 576 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M159.88,175.82h64v64a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16v-64h64a16,16,0,0,0,16-16v-64a16,16,0,0,0-16-16h-64v-64a16,16,0,0,0-16-16h-64a16,16,0,0,0-16,16v64h-64a16,16,0,0,0-16,16v64A16,16,0,0,0,159.88,175.82ZM568.07,336.13a39.91,39.91,0,0,0-55.93-8.47L392.47,415.84H271.86a16,16,0,0,1,0-32H350.1c16,0,30.75-10.87,33.37-26.61a32.06,32.06,0,0,0-31.62-37.38h-160a117.7,117.7,0,0,0-74.12,26.25l-46.5,37.74H15.87a16.11,16.11,0,0,0-16,16v96a16.11,16.11,0,0,0,16,16h347a104.8,104.8,0,0,0,61.7-20.27L559.6,392A40,40,0,0,0,568.07,336.13Z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Доступное лечение с гарантией результата
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Наши услуги доступны каждому благодаря разумной стоимости. Мы предоставляем платные услуги с
+                    прозрачными ценами, а также предлагаем бесплатные первичные консультации. Для борьбы с зависимостью
+                    мы используем лучшие методы лечения.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-clinic-medical" viewBox="0 0 576 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M288 115L69.47 307.71c-1.62 1.46-3.69 2.14-5.47 3.35V496a16 16 0 0 0 16 16h416a16 16 0 0 0 16-16V311.1c-1.7-1.16-3.72-1.82-5.26-3.2zm96 261a8 8 0 0 1-8 8h-56v56a8 8 0 0 1-8 8h-48a8 8 0 0 1-8-8v-56h-56a8 8 0 0 1-8-8v-48a8 8 0 0 1 8-8h56v-56a8 8 0 0 1 8-8h48a8 8 0 0 1 8 8v56h56a8 8 0 0 1 8 8zm186.69-139.72l-255.94-226a39.85 39.85 0 0 0-53.45 0l-256 226a16 16 0 0 0-1.21 22.6L25.5 282.7a16 16 0 0 0 22.6 1.21L277.42 81.63a16 16 0 0 1 21.17 0L527.91 283.9a16 16 0 0 0 22.6-1.21l21.4-23.82a16 16 0 0 0-1.22-22.59z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Разные форматы лечения: стационар, амбулаторно и на дому
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Вы можете выбрать удобный формат лечения: стационар, амбулаторно или помощь на дому. Наша бригада
+                    готова приехать к вам в домашних условиях, чтобы обеспечить срочную помощь или доставить больного в
+                    диспансер или больницу.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-briefcase-medical" viewBox="0 0 512 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M464 128h-80V80c0-26.5-21.5-48-48-48H176c-26.5 0-48 21.5-48 48v48H48c-26.5 0-48 21.5-48 48v288c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V176c0-26.5-21.5-48-48-48zM192 96h128v32H192V96zm160 248c0 4.4-3.6 8-8 8h-56v56c0 4.4-3.6 8-8 8h-48c-4.4 0-8-3.6-8-8v-56h-56c-4.4 0-8-3.6-8-8v-48c0-4.4 3.6-8 8-8h56v-56c0-4.4 3.6-8 8-8h48c4.4 0 8 3.6 8 8v56h56c4.4 0 8 3.6 8 8v48z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Принудительное лечение и помощь без согласия
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Мы организуем принудительное лечение для больных, которые не хотят лечиться. Это может быть
+                    насильная госпитализация или терапия без согласия пациента. Перед началом лечения проводится
+                    освидетельствование и экспертиза состояния пациента, чтобы определить наиболее эффективный план
+                    помощи.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-laptop-medical" viewBox="0 0 640 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M232 224h56v56a8 8 0 0 0 8 8h48a8 8 0 0 0 8-8v-56h56a8 8 0 0 0 8-8v-48a8 8 0 0 0-8-8h-56v-56a8 8 0 0 0-8-8h-48a8 8 0 0 0-8 8v56h-56a8 8 0 0 0-8 8v48a8 8 0 0 0 8 8zM576 48a48.14 48.14 0 0 0-48-48H112a48.14 48.14 0 0 0-48 48v336h512zm-64 272H128V64h384zm112 96H381.54c-.74 19.81-14.71 32-32.74 32H288c-18.69 0-33-17.47-32.77-32H16a16 16 0 0 0-16 16v16a64.19 64.19 0 0 0 64 64h512a64.19 64.19 0 0 0 64-64v-16a16 16 0 0 0-16-16z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Эффективные методы и кодировка от зависимости
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Мы применяем новые методы лечения, включая медикаментозное воздействие, гипноз и кодировку. Для
+                    борьбы с зависимостью, например, от пивного алкоголя, используются современные подходы, такие как
+                    программа "12 шагов".
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-home" viewBox="0 0 576 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Реабилитация и поддержка после стационара
+                </h3>
+                <div class="benefits-alt__item-description">
+                    После лечения пациенты проходят реабилитацию в наших центрах или санаториях. Мы оказываем помощь в
+                    адаптации и трудоустройстве, чтобы пациенты могли восстановить свою жизнь после зависимости.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-user-nurse" viewBox="0 0 448 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M319.41,320,224,415.39,128.59,320C57.1,323.1,0,381.6,0,453.79A58.21,58.21,0,0,0,58.21,512H389.79A58.21,58.21,0,0,0,448,453.79C448,381.6,390.9,323.1,319.41,320ZM224,304A128,128,0,0,0,352,176V65.82a32,32,0,0,0-20.76-30L246.47,4.07a64,64,0,0,0-44.94,0L116.76,35.86A32,32,0,0,0,96,65.82V176A128,128,0,0,0,224,304ZM184,71.67a5,5,0,0,1,5-5h21.67V45a5,5,0,0,1,5-5h16.66a5,5,0,0,1,5,5V66.67H259a5,5,0,0,1,5,5V88.33a5,5,0,0,1-5,5H237.33V115a5,5,0,0,1-5,5H215.67a5,5,0,0,1-5-5V93.33H189a5,5,0,0,1-5-5ZM144,160H304v16a80,80,0,0,1-160,0Z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Команда профессионалов: наркологи, психологи и врачи
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Наша клиника гордится своими специалистами: наркологами, психологами, врачами и докторами. Мы
+                    используем эффективные препараты и современные технологии для лечения взрослых и подростков, уделяя
+                    внимание каждому этапу выздоровления.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-medkit" viewBox="0 0 512 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M96 480h320V128h-32V80c0-26.51-21.49-48-48-48H176c-26.51 0-48 21.49-48 48v48H96v352zm96-384h128v32H192V96zm320 80v256c0 26.51-21.49 48-48 48h-16V128h16c26.51 0 48 21.49 48 48zM64 480H48c-26.51 0-48-21.49-48-48V176c0-26.51 21.49-48 48-48h16v352zm288-208v32c0 8.837-7.163 16-16 16h-48v48c0 8.837-7.163 16-16 16h-32c-8.837 0-16-7.163-16-16v-48h-48c-8.837 0-16-7.163-16-16v-32c0-8.837 7.163-16 16-16h48v-48c0-8.837 7.163-16 16-16h32c8.837 0 16 7.163 16 16v48h48c8.837 0 16 7.163 16 16z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Анонимная помощь и круглосуточная поддержка
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Мы предоставляем анонимную помощь круглосуточно. Записаться на прием можно через онлайн-запись или
+                    оформить обратный звонок на нашем сайте. Наша клиника всегда рядом, готова оперативно помочь.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-search-plus" viewBox="0 0 512 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M304 192v32c0 6.6-5.4 12-12 12h-56v56c0 6.6-5.4 12-12 12h-32c-6.6 0-12-5.4-12-12v-56h-56c-6.6 0-12-5.4-12-12v-32c0-6.6 5.4-12 12-12h56v-56c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v56h56c6.6 0 12 5.4 12 12zm201 284.7L476.7 505c-9.4 9.4-24.6 9.4-33.9 0L343 405.3c-4.5-4.5-7-10.6-7-17V372c-35.3 27.6-79.7 44-128 44C93.1 416 0 322.9 0 208S93.1 0 208 0s208 93.1 208 208c0 48.3-16.4 92.7-44 128h16.3c6.4 0 12.5 2.5 17 7l99.7 99.7c9.3 9.4 9.3 24.6 0 34zM344 208c0-75.2-60.8-136-136-136S72 132.8 72 208s60.8 136 136 136 136-60.8 136-136z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Диагностика и точное обследование
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Мы проводим тесты, обследование и анализ признаков зависимости. Это помогает точно определить стадию
+                    заболевания и подобрать эффективные методы лечения. Например, для хронических форм применяется
+                    капельница для снятия интоксикации.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marked-alt" viewBox="0 0 576 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M288 0c-69.59 0-126 56.41-126 126 0 56.26 82.35 158.8 113.9 196.02 6.39 7.54 17.82 7.54 24.2 0C331.65 284.8 414 182.26 414 126 414 56.41 357.59 0 288 0zm0 168c-23.2 0-42-18.8-42-42s18.8-42 42-42 42 18.8 42 42-18.8 42-42 42zM20.12 215.95A32.006 32.006 0 0 0 0 245.66v250.32c0 11.32 11.43 19.06 21.94 14.86L160 448V214.92c-8.84-15.98-16.07-31.54-21.25-46.42L20.12 215.95zM288 359.67c-14.07 0-27.38-6.18-36.51-16.96-19.66-23.2-40.57-49.62-59.49-76.72v182l192 64V266c-18.92 27.09-39.82 53.52-59.49 76.72-9.13 10.77-22.44 16.95-36.51 16.95zm266.06-198.51L416 224v288l139.88-55.95A31.996 31.996 0 0 0 576 426.34V176.02c0-11.32-11.43-19.06-21.94-14.86z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Удобное расположение и доступность
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Мы находимся в Москве, с удобным доступом к амбулаторным и стационарным отделениям. Узнайте наш
+                    адрес и номер телефона, чтобы записаться на прием или получить подробную консультацию.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-handshake" viewBox="0 0 640 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M434.7 64h-85.9c-8 0-15.7 3-21.6 8.4l-98.3 90c-.1.1-.2.3-.3.4-16.6 15.6-16.3 40.5-2.1 56 12.7 13.9 39.4 17.6 56.1 2.7.1-.1.3-.1.4-.2l79.9-73.2c6.5-5.9 16.7-5.5 22.6 1 6 6.5 5.5 16.6-1 22.6l-26.1 23.9L504 313.8c2.9 2.4 5.5 5 7.9 7.7V128l-54.6-54.6c-5.9-6-14.1-9.4-22.6-9.4zM544 128.2v223.9c0 17.7 14.3 32 32 32h64V128.2h-96zm48 223.9c-8.8 0-16-7.2-16-16s7.2-16 16-16 16 7.2 16 16-7.2 16-16 16zM0 384h64c17.7 0 32-14.3 32-32V128.2H0V384zm48-63.9c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16c0-8.9 7.2-16 16-16zm435.9 18.6L334.6 217.5l-30 27.5c-29.7 27.1-75.2 24.5-101.7-4.4-26.9-29.4-24.8-74.9 4.4-101.7L289.1 64h-83.8c-8.5 0-16.6 3.4-22.6 9.4L128 128v223.9h18.3l90.5 81.9c27.4 22.3 67.7 18.1 90-9.3l.2-.2 17.9 15.5c15.9 13 39.4 10.5 52.3-5.4l31.4-38.6 5.4 4.4c13.7 11.1 33.9 9.1 45-4.7l9.5-11.7c11.2-13.8 9.1-33.9-4.6-45.1z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    Признание пациентов и положительные отзывы
+                </h3>
+                <div class="benefits-alt__item-description">
+                    Наш диспансер получил множество положительных отзывов от пациентов и их близких. Мы знаем, как
+                    заставить зависимого человека начать лечение, и готовы помочь каждому на пути к новой жизни.
+                </div>
+            </li>
+            <li class="benefits-alt__item">
+                <div class="benefits-alt__item-icon">
+                    <svg aria-hidden="true" class="e-font-icon-svg e-fas-heart" viewBox="0 0 512 512"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"></path>
+                    </svg>
+                </div>
+                <h3 class="benefits-alt__item-title h4">
+                    ВИП лечение алкоголизма и наркомании
+                </h3>
+                <div class="benefits-alt__item-description">
+                    В нашей клинике есть премиальное отделение VIP наркологии. Лечение и реабилитация повышенной
+                    комфортности. Проходите восстановление как на отдыхе в отеле 5 звезд. Мы ценим Ваше время и
+                    спокойствие.
+                </div>
+            </li>
+        </ul>
+    </div>
+</section>
+<footer class="footer pt-3">
+    <div class="footer__inner container">
+        <div class="footer__locations">
+            <div class="py-5">
+                <div class="row">
+
+                    <!-- Округа -->
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-uppercase fw-bold small mb-3">
+                            Округа столицы рядом с клиникой:
+                        </h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>СЗАО</li>
+                            <li>САО</li>
+                            <li>СВАО</li>
+                        </ul>
+                    </div>
+
+                    <!-- Метро -->
+                    <div class="col-md-6 mb-4">
+                        <h6 class="text-uppercase fw-bold small mb-3">
+                            Рядом с нами метро:
+                        </h6>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Ховрино</li>
+                                    <li>Беломорская</li>
+                                    <li>Речной вокзал</li>
+                                    <li>Водный стадион</li>
+                                    <li>Коптево</li>
+                                    <li>Лихоборы</li>
+                                    <li>Селигерская</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Яхромская</li>
+                                    <li>Лианозово</li>
+                                    <li>Окружная</li>
+                                    <li>Петровско-Разумовская</li>
+                                    <li>Бескудниково</li>
+                                    <li>Дегунино</li>
+                                    <li>Алтуфьево</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4">
+                                <ul class="list-unstyled mb-0">
+                                    <li>Бибирево</li>
+                                    <li>Отрадное</li>
+                                    <li>Ботанический сад</li>
+                                    <li>Свиблово</li>
+                                    <li>Бабушкинская</li>
+                                    <li>Медведково</li>
+                                    <li>Физтех</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Шоссе -->
+                    <div class="col-md-3 mb-4">
+                        <h6 class="text-uppercase fw-bold small mb-3">
+                            Шоссе рядом с нами:
+                        </h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>Ленинградское</li>
+                            <li>Дмитровское</li>
+                            <li>Алтуфьевское</li>
+                            <li>Ярославское</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <h6 class="text-uppercase fw-bold small mb-3">
+                            Рядом с нами города Московской области:
+                        </h6>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <ul class="list-unstyled mb-0">
+                            <li>Сходня</li>
+                            <li>Химки</li>
+                            <li>Лобня</li>
+                            <li>Долгопрудный</li>
+                            <li>Мытищи</li>
+                            <li>Королёв</li>
+                        </ul>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <ul class="list-unstyled mb-0">
+                            <li>Ивантеевка</li>
+                            <li>Пушкино</li>
+                            <li>Зеленоград</li>
+                            <li>Красногорск</li>
+                            <li>Щёлково</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__body">
+            <div class="footer__reqs">
+                <a href="./" class="footer__logo">
+                    <img src="./assets/images/logo.png" alt="">
+                </a>
+                <a href="./" class="footer__name">
+                    <strong>ГЕРМЕС-Наркология</strong><br>
+                    <small>НАРКОЛОГИЧЕСКАЯ КЛИНИКА</small>
+                </a>
+                <div class="footer__soc1als soc1als">
+                    <a href="#" class="soc1als__link soc1als__link--wa">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-whatsapp" viewBox="0 0 448 512"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M380.9 97.1C339 55.1 283.2 32 223.9 32c-122.4 0-222 99.6-222 222 0 39.1 10.2 77.3 29.6 111L0 480l117.7-30.9c32.4 17.7 68.9 27 106.1 27h.1c122.3 0 224.1-99.6 224.1-222 0-59.3-25.2-115-67.1-157zm-157 341.6c-33.2 0-65.7-8.9-94-25.7l-6.7-4-69.8 18.3L72 359.2l-4.4-7c-18.5-29.4-28.2-63.3-28.2-98.2 0-101.7 82.8-184.5 184.6-184.5 49.3 0 95.6 19.2 130.4 54.1 34.8 34.9 56.2 81.2 56.1 130.5 0 101.8-84.9 184.6-186.6 184.6zm101.2-138.2c-5.5-2.8-32.8-16.2-37.9-18-5.1-1.9-8.8-2.8-12.5 2.8-3.7 5.6-14.3 18-17.6 21.8-3.2 3.7-6.5 4.2-12 1.4-32.6-16.3-54-29.1-75.5-66-5.7-9.8 5.7-9.1 16.3-30.3 1.8-3.7.9-6.9-.5-9.7-1.4-2.8-12.5-30.1-17.1-41.2-4.5-10.8-9.1-9.3-12.5-9.5-3.2-.2-6.9-.2-10.6-.2-3.7 0-9.7 1.4-14.8 6.9-5.1 5.6-19.4 19-19.4 46.3 0 27.3 19.9 53.7 22.6 57.4 2.8 3.7 39.1 59.7 94.8 83.8 35.2 15.2 49 16.5 66.6 13.9 10.7-1.6 32.8-13.4 37.4-26.4 4.6-13 4.6-24.1 3.2-26.4-1.3-2.5-5-3.9-10.5-6.6z"></path>
+                        </svg>
+                    </a>
+                    <a href="#" class="soc1als__link soc1als__link--tg">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fab-telegram" viewBox="0 0 496 512"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"></path>
+                        </svg>
+                    </a>
+                </div>
+                <div class="footer__address">
+                    <p><a class="footer__address-item" href="mailto:klinika.germes@mail.ru">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-mail-bulk" viewBox="0 0 576 512"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M160 448c-25.6 0-51.2-22.4-64-32-64-44.8-83.2-60.8-96-70.4V480c0 17.67 14.33 32 32 32h256c17.67 0 32-14.33 32-32V345.6c-12.8 9.6-32 25.6-96 70.4-12.8 9.6-38.4 32-64 32zm128-192H32c-17.67 0-32 14.33-32 32v16c25.6 19.2 22.4 19.2 115.2 86.4 9.6 6.4 28.8 25.6 44.8 25.6s35.2-19.2 44.8-22.4c92.8-67.2 89.6-67.2 115.2-86.4V288c0-17.67-14.33-32-32-32zm256-96H224c-17.67 0-32 14.33-32 32v32h96c33.21 0 60.59 25.42 63.71 57.82l.29-.22V416h192c17.67 0 32-14.33 32-32V192c0-17.67-14.33-32-32-32zm-32 128h-64v-64h64v64zm-352-96c0-35.29 28.71-64 64-64h224V32c0-17.67-14.33-32-32-32H96C78.33 0 64 14.33 64 32v192h96v-32z"></path>
+                        </svg>
+                        klinika.germes@mail.ru
+                    </a></p>
+                    <p class="footer__address-item">
+                        <svg aria-hidden="true" class="e-font-icon-svg e-fas-map-marker" viewBox="0 0 384 512"
+                             xmlns="http://www.w3.org/2000/svg">
+                            <path d="M172.268 501.67C26.97 291.031 0 269.413 0 192 0 85.961 85.961 0 192 0s192 85.961 192 192c0 77.413-26.97 99.031-172.268 309.67-9.535 13.774-29.93 13.773-39.464 0z"></path>
+                        </svg>
+                        Черского, 13, корп. 4
+                    </p>
+                </div>
+            </div>
+            <div class="footer__payment d-flex flex-column align-items-center">
+                <p><a class="footer__taxi-button button button--sm"
+                      href="https://taxi.yandex.ru/order?gfrom=,&gto=55.875238,37.577858&tariff=econom&lang=ru&utm_source=yamaps&utm_medium=2334692&ref=2334692">Вызвать
+                    такси</a></p>
+                <p>Яндекс такси до г.Москва, пр.Черского, 13, корп. 4</p>
+                <p>Способы оплаты</p>
+                <p class="d-flex gap-2">
+                    <img class="footer__payment-icon" src="./assets/images/payments/1.webp" alt="">
+                    <img class="footer__payment-icon" src="./assets/images/payments/2.webp" alt="">
+                    <img class="footer__payment-icon" src="./assets/images/payments/3.webp" alt="">
+                    <img class="footer__payment-icon" src="./assets/images/payments/4.webp" alt="">
+                </p>
+            </div>
+        </div>
+    </div>
+    <p class="container small mb-3 text-center">
+        Вся информация на сайте носит ознакомительный характер, не является публичной офертой. Для уточнения актуальных
+        цен на услуги и информации о специалистах клиники просьба обращаться по телефону <a href="tel:+74954890303">+7(495)
+        489-03-03</a>
+    </p>
+    <div class="footer__copyright">
+        <div class="container">@2025</div>
+    </div>
+</footer>
+<div class="modal fade" id="consultModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content p-3 p-md-4">
+
+            <button type="button" class="btn-close ms-auto" data-bs-dismiss="modal" aria-label="Close"></button>
+
+            <h2 class="text-center fw-bold mt-2">
+                ЗАКАЗАТЬ УСЛУГУ:<br>
+                КОНСУЛЬТАЦИЯ НАРКОЛОГА ПО ТЕЛЕФОНУ
+            </h2>
+
+            <p class="text-center mt-3 mb-4">
+                Заполните форму ниже для записи на консультацию
+            </p>
+
+            <form>
+
+                <div class="mb-3">
+                    <label for="name" class="visually-hidden">Имя</label>
+                    <input type="text" class="form-control form-control-lg" placeholder="Введите ваше имя"
+                           name="your-name" id="name">
+                </div>
+
+                <div class="mb-3">
+                    <label for="phone" class="visually-hidden">Телефон</label>
+                    <input type="tel" class="form-control form-control-lg" placeholder="Номер телефона*" required
+                           name="your-phone" id="phone">
+                </div>
+
+                <div class="form-check mb-4 d-flex">
+                    <input class="form-check-input me-2" type="checkbox" id="agree">
+                    <label class="form-check-label" for="agree">
+                        Нажимая, вы соглашаетесь с <a href="#" class="text-primary">политикой обработки персональных
+                        данных</a>.
+                    </label>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                    ОСТАВИТЬ ЗАЯВКУ
+                </button>
+
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,11 @@
+@use "../bs" as *;
+
+.section-content {
+  h3 {
+    color: #333333;
+  }
+
+  hr {
+    margin-block: 1.5rem;
+  }
+}

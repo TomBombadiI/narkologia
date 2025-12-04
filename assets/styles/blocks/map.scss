@@ -1,0 +1,32 @@
+@use "../bs" as *;
+
+.map {
+  &__body {
+    display: flex;
+
+    @include media-breakpoint-down(lg) {
+      flex-direction: column;
+    }
+  }
+
+  &__caption {
+    padding: 1rem;
+    background-color: #F2F2F6;
+    flex: 0 0 300px;
+
+    @include media-breakpoint-down(lg) {
+      max-width: 100%;
+      width: 100%;
+      flex: 1 1 auto;
+    }
+  }
+
+  &__iframe {
+    width: 100%;
+    overflow: hidden;
+
+    ymaps {
+      max-width: 100% !important;
+    }
+  }
+}

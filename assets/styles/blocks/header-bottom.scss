@@ -1,0 +1,32 @@
+@use "../bs" as *;
+
+.header-bottom {
+  &__mobile-actions {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+
+    @include media-breakpoint-up(lg) {
+      display: none;
+    }
+
+    @include media-breakpoint-down(sm) {
+      gap: .5rem;
+    }
+
+    .button {
+      font-size: 16px;
+      padding-block: .5rem;
+
+      @include media-breakpoint-down(sm) {
+        font-size: 14px;
+        padding: .5rem;
+      }
+    }
+  }
+
+  &__mobile-selling-text {
+    font-weight: 700;
+    color: var(--color-text-alt);
+  }
+}

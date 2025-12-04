@@ -1,0 +1,28 @@
+.soc1als {
+  display: flex;
+  gap: .5rem;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 56px;
+    height: 56px;
+    flex: 0 0 56px;
+    border-radius: 5px;
+
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      fill: var(--color-white);
+    }
+
+    &--wa {
+      background-color: #25d366;
+    }
+
+    &--tg {
+      background-color: #2ca5e0;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@use "../bs" as *;
+
+.footer {
+  background-color: #eef3ff;
+
+  &__body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    align-items: center;
+
+    @include media-breakpoint-down(lg) {
+      grid-template-columns: 1fr;
+      justify-items: center;
+    }
+  }
+
+  &__reqs {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  &__logo {
+    display: inline-block;
+    max-width: 140px;
+
+    @include media-breakpoint-down(lg) {
+      margin: 0 auto;
+    }
+  }
+
+  &__name {
+    text-decoration: none;
+    color: var(--color-text);
+
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+  }
+
+  &__address {
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+
+      svg {
+        max-width: 17px;
+        fill: var(--color-primary);
+      }
+    }
+  }
+
+  &__soc1als {
+    @include media-breakpoint-down(lg) {
+      justify-content: center;
+    }
+  }
+
+  &__payment {
+    flex-wrap: wrap;
+
+    &-icon {
+      width: 50px;
+      height: 50px;
+      flex: 0 0 50px;
+    }
+
+    @include media-breakpoint-down(lg) {
+      text-align: center;
+    }
+  }
+
+  &__copyright {
+    background-color: var(--color-primary);
+    padding-block: 1rem;
+    text-align: center;
+    color: var(--color-white);
+  }
+}

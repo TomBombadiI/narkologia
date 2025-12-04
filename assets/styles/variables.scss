@@ -1,0 +1,44 @@
+@use "bootstrap/scss/bootstrap" as *;
+
+:root {
+  --color-primary: #0470f9;
+  --color-primary-darken: #024eb2;
+  --color-accent: #ff0401;
+  --color-accent-darken: #b00300;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #dddddd;
+  --color-gray-darken: #c1c1c1;
+  --color-gray-alt: #f4f4f4;
+  --color-text: #1a3444;
+  --color-text-alt: #33335a;
+  --color-text-alt-2: #393185;
+
+  --spacing-sm: .5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+
+  --radius-md: 10px;
+
+  --section-gap: 3rem;
+
+  --font-size-sm: .8rem;
+  --font-size-md: 1rem;
+  --font-size-lg: 1.15rem;
+  --font-size-xl: 1.25rem;
+  --font-size-2xl: 1.5rem;
+  --font-size-3xl: 2rem;
+  --font-size-4xl: 3rem;
+
+  --transition-duration: 0.2s;
+  --transition-duration-longer: 0.4s;
+
+  --z-index-navigation: 10;
+}
+
+@include media-breakpoint-down(lg) {
+  :root {
+    --section-gap: 2rem;
+  }
+}

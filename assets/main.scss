@@ -1,0 +1,22 @@
+@use "bootstrap/scss/bootstrap";
+@use "styles/variables";
+@use "styles/global";
+
+@use "bootstrap-icons/font/bootstrap-icons" with (
+  $bootstrap-icons-font-dir: "../assets/bootstrap-icons" ,
+);
+
+@use './styles/blocks/button';
+@use './styles/blocks/socials';
+
+@use './styles/blocks/header';
+@use './styles/blocks/header-bottom';
+@use './styles/blocks/hero';
+@use './styles/blocks/doctor';
+@use './styles/blocks/banner';
+@use './styles/blocks/map';
+@use './styles/blocks/content';
+@use './styles/blocks/benefits';
+@use './styles/blocks/reviews';
+@use './styles/blocks/benefits-alt';
+@use './styles/blocks/footer';

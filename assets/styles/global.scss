@@ -1,0 +1,130 @@
+@use "bootstrap/scss/bootstrap" as *;
+@use "./helpers" as *;
+
+:root,
+body,
+#page {
+  min-height: 100dvh;
+}
+
+body {
+  background-color: var(--color-white);
+  font-size: var(--font-size-md);
+  color: var(--color-text);
+}
+
+a {
+  color: inherit;
+  transition-duration: var(--transition-duration);
+
+  @include hover {
+    color: var(--color-accent);
+  }
+}
+
+button {
+  transition-duration: var(--transition-duration);
+}
+
+#page {
+  display: flex;
+  flex-direction: column;
+}
+
+main.content {
+  flex-grow: 1;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+  margin-bottom: 1rem;
+}
+
+h1,
+.h1 {
+  line-height: 1;
+}
+
+h2,
+.h2 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 30px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+  }
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+  }
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.section {
+  margin-block: 4rem;
+
+  @include media-breakpoint-down(lg) {
+    margin-block: 2.5rem;
+  }
+}
+
+.wave-text {
+  display: inline-flex;
+  gap: 0.05em;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.wave-text span {
+  display: inline-block;
+  transform-origin: center;
+}
+
+.wave-text span.wave-letter {
+  animation: wave-scale 0.3s ease-in-out; /* 0.3s = LETTER_ANIM_DURATION */
+}
+
+@keyframes wave-scale {
+  0% {
+    transform: scale(1);
+  }
+
+  30% {
+    transform: scale(0.85); /* чуть просаживается */
+  }
+
+  70% {
+    transform: scale(1.3); /* потом выпрыгивает */
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
