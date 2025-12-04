@@ -70,3 +70,12 @@ new Swiper('.reviews__slider', {
   },
   modules: [Navigation, Pagination, Autoplay],
 });
+
+const panel = document.getElementById('bottomPanel') as HTMLElement;
+
+function updatePadding() {
+  document.body.style.paddingBottom = panel.offsetHeight + 10 + 'px';
+}
+
+window.addEventListener('load', updatePadding);
+window.addEventListener('resize', updatePadding);

@@ -18071,6 +18071,12 @@ new swiper__WEBPACK_IMPORTED_MODULE_2__["default"]('.reviews__slider', {
     },
     modules: [swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Navigation, swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Pagination, swiper_modules__WEBPACK_IMPORTED_MODULE_3__.Autoplay],
 });
+const panel = document.getElementById('bottomPanel');
+function updatePadding() {
+    document.body.style.paddingBottom = panel.offsetHeight + 10 + 'px';
+}
+window.addEventListener('load', updatePadding);
+window.addEventListener('resize', updatePadding);
 
 })();
 
